@@ -6,11 +6,13 @@ import {
   analisaTextoHandler
 } from '../controllers/textoController.js';
 
+// cria um roteador 
 const router = Router();
 
-router.get('/termos', getAllHandler);
-router.get('/termos/:tipo', getByTipoHandler);
-router.get('/sugestoes/:termo', getSugestaoHandler);
-router.post('/analisa', analisaTextoHandler);
+// define as rotas e controladores responsaveis por cada um
+router.get('/termos', getAllHandler);    // lista todos os termos 
+router.get('/termos/:tipo', getByTipoHandler);    // lista termos filtrados por tipo 
+router.get('/sugestoes/:termo', getSugestaoHandler);   //retorna sugestao para um termo
+router.post('/analisa', analisaTextoHandler);   // analisa um termo 
 
 export default router;

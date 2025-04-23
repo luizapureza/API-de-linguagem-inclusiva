@@ -1,16 +1,17 @@
+// Lista de termos considerados problemáticos, com sugestões e tipo de preconceito
 const termos = [
   {
-    termo: "denegrir",
+    termo: "denegrir", // termo racista 
     sugestao: "prejudicar, manchar",
     tipo: "racista"
   },
   {
-    termo: "aleijado",
+    termo: "aleijado", // termo capacitista
     sugestao: "pessoa com deficiência",
     tipo: "capacitista"
   },
   {
-    termo: "mulherzinha",
+    termo: "mulherzinha", // termo machista
     sugestao: "fraca, sem força",
     tipo: "machista"
   },
@@ -107,6 +108,6 @@ const termos = [
   }
 ];
 
-  
+  // exporta os termos para que possam ser usados por outros modulos 
   export default termos;
   
