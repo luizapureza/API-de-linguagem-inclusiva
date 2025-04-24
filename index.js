@@ -2,7 +2,7 @@ import express from 'express';
 import textoRoutes from './routes/textoRoutes.js';
 
 const app = express();
-const PORT = 3000;
+const PORT = 4000;
 
 // permite que o app interprete requisicoes com json
 app.use(express.json());
